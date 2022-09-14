@@ -21,3 +21,10 @@ Label Studio Integration with Open Data Hub
 6. `oc apply -f deploy/openshift/nginx`
 
 7. `oc apply -f deploy/openshift/postgres`
+
+
+
+TODOs:
+1. Fix the postgres deployment so that labelstudio can discover postgres using a `hostname` rather than the static ip of the pod. This is a temp workaround.
+2. Implement readycheck for the postgres deployment.
+3. Implement a livenessprobe for the labelstudio route
